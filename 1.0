@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <title>Title</title>
+  <style>
+    nav{
+        width: 1200px;
+        height: 46px;
+        background-image: linear-gradient(to bottom,#333,#666);
+        border-radius: 23px;
+        margin: 50px auto;
+    }
+    nav>a{
+        display: inline-block;
+        height: 46px;
+        line-height: 46px;
+        color:#f1f1f1;
+        text-decoration: none;
+        padding:0 30px;
+        font-size: 16px;
+    }
+    nav>a:hover{
+        background:#111;
+    }
+    nav>a:first-child{
+        border-top-left-radius: 23px;
+        border-bottom-left-radius: 23px;
+    }
+    nav>a:nth-child(2){
+        position:relative;
+    }
+    #hot{
+        background: orange;
+        color: #111;
+        font-size:16px;
+        padding:1px 5px;
+        position:absolute;
+        top: -8px;
+        right: -3px;
+        border-radius: 2px;
+    }
+    .fixed{
+        position:fixed;
+        width: 150px;
+        height: 320px;
+        right: 10px;
+        bottom:10px;
+    }
+    body{height: 1600px;}
+  </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#"> HOME</a>
+        <a href="#"> PRODUCT<span id="hot">hot</span></a>
+        <a href="#"> SERVICE</a>
+        <a href="#"> ABOUT AS</a>
+        <a href="#">HELP</a>
+    </nav>
+</body>
